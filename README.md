@@ -6,5 +6,6 @@ git clone (URL)
 git remote -v Display the URL
 git status 
 git add 
-git commit - m ""
+git commit - m "Add "
+git commit - m "Edit "
 git log
