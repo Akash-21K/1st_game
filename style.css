@@ -17,28 +17,53 @@ h1 {
 .container {
   margin: 20px;
   display: flex;
-  justify-content: center;
-  height: 20vh;
   background-color: #0c0e14;
   color: rgb(99, 233, 222);
 }
 
 .contain1 {
   flex: 1;
-  align-self: center;
-  text-align: center;
   background-color: #262b3b;
   margin: 50px 50px;
-  height: 50px;
 }
 
 .contain2 {
   flex: 1;
-  align-self: center;
-  text-align: center;
   background-color: #262b3b;
   margin: 50px 50px;
-  height: 50px;
+}
+
+.contain1 h2 {
+  flex: 1;
+  text-align: center;
+}
+
+.contain2 h2 {
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  margin: 20px;
+  display: flex;
+  height: 20vh;
+  gap: 10vh;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.scoreP {
+  background-color: red;
+  flex: 1;
+}
+.chance {
+  flex: 1;
+  background-color: green;
+}
+
+.scoreC {
+  flex: 1;
+  background-color: yellow;
 }
 
 .option {
@@ -58,23 +83,26 @@ h1 {
   height: 50px;
 }
 
+button {
+  border-radius: 8px;
+  background-color: #0c0e14;
+  color: aqua;
+}
+
 .rockP {
   flex: 1;
   text-align: center;
-  border: 1px solid #262b3b;
   margin-left: 10px;
 }
 .paperP {
   flex: 1;
   text-align: center;
-  border: 1px solid #262b3b;
   margin-left: 10px;
 }
 
 .scissorsP {
   flex: 1;
   text-align: center;
-  border: 1px solid #262b3b;
   margin-left: 10px;
 }
 
@@ -84,18 +112,21 @@ h1 {
   align-self: center;
   margin-left: 10px;
   height: 50px;
+  color: aqua;
 }
 
 .rockC {
   flex: 1;
   text-align: center;
   border: 1px solid #262b3b;
+  border-radius: 8px;
 }
 .paperC {
   flex: 1;
   text-align: center;
   border: 1px solid #262b3b;
   margin-left: 10px;
+  border-radius: 8px;
 }
 
 .scissorsC {
@@ -104,4 +135,5 @@ h1 {
   border: 1px solid #262b3b;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 8px;
 }
