@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  background-color: #0c0e14;
+  color: rgb(99, 233, 222);
+  margin: 20px;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  background-color: #0c0e14;
+  color: rgb(99, 233, 222);
+}
+
+.contain1 {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  background-color: #262b3b;
+}
+
+.contain2 {
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  background-color: #3b4257;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+
+  margin: 20px;
+  height: 20vh;
+  background-color: #0c0e14;
+  color: wheat;
+}
+
+.player {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  height: 50px;
+}
+
+.rockP {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+}
+.paperP {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+  margin-left: 10px;
+}
+
+.scissorsP {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+  margin-left: 10px;
+}
+
+.computer {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  margin-left: 10px;
+  height: 50px;
+}
+
+.rockC {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+}
+.paperC {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+  margin-left: 10px;
+}
+
+.scissorsC {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #262b3b;
+  margin-left: 10px;
+}
