@@ -1,25 +1,36 @@
-//option to choose
+const options = ["rock", "paper", "siccisor"];
 
-const options = ["rock", "paper", "scissor"];
+let computerPlay = options[Math.floor(Math.random() * options.length)];
+console.log(`Computer chose:`, computerPlay);
 
-//computer selection
-const computerPlay = function () {
-  let computerChoise = options[Math.floor(Math.random() * options.length)];
-  return computerChoise;
-};
-console.log(computerPlay());
+do {
+  playerPlay = prompt(
+    `Chose your option: Rock, Paper, Siccisor`
+  ).toLocaleLowerCase();
+  if (
+    playerPlay !== "rock" &&
+    playerPlay !== "paper" &&
+    playerPlay !== "siccisor"
+  ) {
+    alert(`Invalid Selection! Try again from Rock, Paper, Siccisor`);
+  }
+} while (
+  playerPlay !== "rock" &&
+  playerPlay !== "paper" &&
+  playerPlay !== "siccisor"
+);
+alert(`Good Job! You chose: ${playerPlay}`);
 
-// Player selction
+console.log(`Player chose:`, playerPlay);
 
-const playerSelection = document.querySelectorAll("button");
-playerSelection.forEach((button) => {
-  button.addEventListener("click", () => {
-    console.log(button.id);
-  });
-});
-
-if (playerSelection === computerPlay) {
-  alert("It is a tie!");
+if (computerPlay === playerPlay) {
+  console.log(`It's a tie`);
+} else if (
+  (computerPlay === "rock" && playerPlay === "siccisor") ||
+  (computerPlay === "paper" && playerPlay === "rock") ||
+  (computerPlay === "siccisor" && playerPlay === "paper")
+) {
+  console.log(`Computer wins`);
 } else {
-  alert("computer wins");
+  console.log(`Player wins`);
 }
